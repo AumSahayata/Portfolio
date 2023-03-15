@@ -8,6 +8,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
+    scroll-behavior: smooth;
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
@@ -1504,16 +1505,16 @@ pre code {
         width: 33.33333%
     }
 
-    .col-md-5 {
-        width: 41.66667%
-    }
+    /* .col-md-5 {
+        width: 20%
+    } */
 
     .col-md-6 {
         width: 50%
     }
 
     .col-md-7 {
-        width: 58.33333%
+        width: 100%
     }
 
     .col-md-8 {
@@ -2270,26 +2271,29 @@ output {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     -webkit-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.icon-cog {
+    color: white;
 }
 
 .form-control:focus {
-    border-color: #66afe9;
+    border-color: #66afe9; 
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)
 }
 
 .form-control::-moz-placeholder {
-    color: #999;
+    color: white;
     opacity: 1
 }
 
 .form-control:-ms-input-placeholder {
-    color: #999
+    color: white;
 }
 
 .form-control::-webkit-input-placeholder {
-    color: #999
+    color: white;
 }
 
 .form-control::-ms-expand {
@@ -2300,7 +2304,7 @@ output {
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
-    background-color: #eee;
+    /* background-color: #eee; */
     opacity: 1
 }
 
