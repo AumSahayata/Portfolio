@@ -6,8 +6,6 @@
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta content="width=device-width,initial-scale=1" name="viewport">
   <meta content="description" name="description">
-  <meta name="google" content="notranslate" />
-  <meta content="Mashup templates have been developped by Orson.io team" name="author">
 
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
@@ -19,14 +17,14 @@
 
 <link href="style.css" rel="stylesheet"></head>
 
-<body class="">
+<body class="" style="background-color: black;">
 <div id="site-border-left"></div>
 <div id="site-border-right"></div>
 <div id="site-border-top"></div>
 <div id="site-border-bottom"></div>
 <!-- Add your content of header -->
 <header>
-  <nav class="navbar  navbar-fixed-top navbar-default">
+  <nav class="navbar  navbar-fixed-top navbar-inverse">
     <div class="container">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
@@ -38,33 +36,22 @@
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav ">
           <li><a href="./index.html" title="">01 : Home</a></li>
-          <li><a href="./works.html" title="">02 : Works</a></li>
+          <li><a href="./index.html#Works" title="">02 : Works</a></li>
           <li><a href="./index.html#About" title="">03 : About me</a></li>
-          <li><a href="./contact.html" title="">04 : Contact</a></li>
-          <li><a href="./components.html" title="">05 : Components</a></li>
+          <li><a href="./index.html#Contact" title="">04 : Contact</a></li>
         </ul>
-
-
-          <ul class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
-            <li><a href="./index.html" title="" class="active">001</a></li>
-            <li><a href="./index.html" title="">002</a></li>
-            <li><a href="./index.html" title="">003</a></li>
-            <li><a href="./index.html" title="">004</a></li>
-            <li><a href="./index.html" title="">005</a></li>
-            <li><a href="./index.html" title="">006</a></li>
-          </ul>
-          <ul style="display: flex; justify-content: end;">
-            <li><section><a href="http://www.twitter.com" title="" class="fa-icon">
-              <i class="fa fa-twitter icon-cog"></i>
-            </a>
-            <a href="http://www.linkedin.com" title="" class="fa-icon">
-              <i class="fa fa-linkedin icon-cog"></i>
-            </a>
-            <a href="http://www.linkedin.com" title="" class="fa-icon">
-              <i class="fa fa-github icon-cog"></i>
-            </a></section></li>
-          </ul>
-
+        <ul style="display: flex; justify-content: end;">
+          <li><section><a href="https://twitter.com/AumSahayata" target="_blank" title="" class="fa-icon">
+            <i class="fa fa-twitter icon-cog"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/aum-sahayata/" target="_blank" title="" class="fa-icon">
+            <i class="fa fa-linkedin icon-cog"></i>
+          </a>
+          <a href="http://www.github.com/Aum-Sahayata" target="_blank" title="" class="fa-icon">
+            <i class="fa fa-github icon-cog"></i>
+          </a></section></li>
+        </ul>
+          
 
       </div> 
     </div>
@@ -77,14 +64,18 @@
         <img src="assets/images/work001-01.jpg" class="img-responsive" alt="">
         <div class="card-container">
           <div class="text-center">
-            <h1 class="h2">001 : Fringilla sit amet</h1>
+            <h1 class="h2">Country information fetching API </h1>
           </div>
-          <p>Nulla facilisi. Vivamus vestibulum, elit in scelerisque ultricies, nisl nunc pulvinar ligula, id sodales arcu sapien in nisi. Quisque libero enim, mattis non augue posuere, venenatis dapibus urna.</p>
-
-          <blockquote>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</p>
-            <small class="pull-right">Irina Martin</small>
-          </blockquote>
+          <p>Using Flask and Beautifulsoup4 (Python),
+            This API returns JSON data of the country mention in the URL.
+            It gets the data by scraping from "https://www.factmonster.com/world/countries"  <br><br>
+            
+            E.g: <a>https://country-info-x77q.onrender.com/india </a><br><br>
+            
+            Here the API will fetch the data of India, since it is mentioned in the URL(Sometimes it might take time to load). <br><br>
+            
+            GitHub: <a>https://github.com/AumSahayata/country_data_fetching_API</a>
+          </p>
         </div>
       </div>
 
